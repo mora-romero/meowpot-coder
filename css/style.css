@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800;900&display=swap');
+
+
+/*-----RESET-----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Popins' sans-serif !important;
+}
+
+/*-----HEADER-----*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    height: 165px;
+    z-index: 10;
+
+}
+
+.header .redes{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3px;
+    background-color: rgb(103, 69, 142)
+        
+}
+
+.header .redes a{
+    margin: 10px;
+    padding: 10px;
+    
+    
+}
+
+.header div a{
+    text-decoration: none;
+    color: rgb(137, 143, 210);
+    
+}
+
+.header div a:hover{
+    color: rgb(246, 152, 213);
+    transition: 0,5s;
+
+}
+
+.header nav{
+    background-color: rgb(229, 233, 254);
+    width: 100%;
+    height:100px;
+    font-family: 'Popins' sans-serif;
+    font-weight: 700;
+
+}
+
+
+.header .navbar-nav{
+    background-color: rgb(229, 233, 254);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(103, 69, 142); 
+    width: 100%;
+    height: 100px;
+}
+
+
+nav div a{
+    margin-left: 30px;
+}
+
+
+
+/*-----MAIN-----*/
+
+
+.hero{
+    background-image: url("../img/indexbackground.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.hero h1{
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 90px;
+    color: rgb(103, 69, 142);
+    
+}
+
+.hero h2{
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    color: rgb(229, 220, 250);
+}
+
+.hero p{
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(229, 233, 254);
+    width: 50%;
+    margin-top: 30px;
+
+}
+
+.slogan{
+    background-color:rgb(229, 233, 254);
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.slogan h3{
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:  rgb(105, 86, 209);
+    text-align: center;
+    
+
+}
+
+.slogan h4{
+    font-family:'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:  rgb(105, 86, 209);
+    text-align: center;
+    
+
+}
+    
+
+.adopt-card{
+    background-color: rgb(103, 69, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+}
+
+.adopt-card div{
+    background-color: rgb(229, 220, 250);
+    width: 500px;
+    height: 550px;
+    border: 7px rgb(105, 86, 209) solid;
+    text-align: center;
+    margin: 40px;
+
+
+}
+
+
+.adopt-card div a{
+    text-decoration: none;
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgb(229, 233, 254);
+    background-color: rgb(126, 110, 214);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+
+    
+}
+
+.adopt-card div a:hover{
+    background-color: rgb(246, 152, 213);
+    box-shadow: 0 0 10px rgb(105, 86, 209);
+    transition: 1s;
+}
+.adopt-card div img{
+    width: 400px;
+    height: 400px;
+    margin: 25px;
+
+}
+
+.fixed{
+    position: fixed;
+    right: 50px ;
+    bottom: 50px;
+}
+
+.acercade{
+    background-image: url(../img/cat5.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    font-family: 'Popins', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(229, 233, 254);
+}
+
+.formulario{
+    text-align: justify;
+    font-family: 'Popins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(103, 69, 142);
+    
+}
+
+.titulo-galeria{
+    background-color: rgb(229, 220, 250);
+    height: 60px;
+    width: 100%
+    
+}
+
+.titulo-galeria h1{
+    color: rgb(103, 69, 142);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Popins' sans-serif;
+    text-align: center;
+}
+
+.galeria-grid{
+    width: 100%;
+    height: auto;
+    background-color: rgb(229, 220, 250);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 400px 300px;
+    gap: 10px;
+}
+
+.galeria-grid div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-webkit-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+    
+}
+
+.item-galeria{
+
+    background-color: rgb(229, 220, 250);
+    position: relative;
+}
+
+.item-galeria h3{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.24);
+    color: rgb(229, 220, 250);
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Popins', sans-serif;
+    font-weight: 600;
+    
+    
+    
+
+}
+
+
+.img-2{
+    
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.img-4{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.img-7{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+/*-----FOOTER-----*/
+
+.footer{
+    background-color: rgb(229, 233, 254);
+}
+
+.footer div{
+    background-color: rgb(229, 233, 254);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.footer img{
+    width: 140px;
+    height: 100px;
+    margin: 10px;
+    border: 5px solid rgb(115, 123, 186);
+}
+
+.footer p{
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+    margin-left: 15px;
+    margin-top: 20px;
+
+}
+
+
+@media screen and (max-width:1050px){
+
+    .header .redes{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand{
+        padding: 0;
+        margin-left: 10px;
+  
+    }        
+    
+    .hero{
+        background-image: url(../img/indexbackground3.jpg);
+        width: 100%;
+        height: 350px;
+    }
+
+    .hero h1{
+        font-size: 50px;
+        
+    }
+    
+    .hero h2{
+        font-size: 20px;
+    }
+    
+    .hero p{
+        margin: 10px;
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    
+    .slogan{
+        width: 100%;
+        height: 50px;
+    }
+    
+    .slogan h3{
+        font-size: 15px;
+    
+    }
+    
+    .slogan h4{
+        
+        font-size: 15px;
+    
+    }
+        
+    
+    .adopt-card{
+        height: 400px;
+    }
+    
+    .adopt-card div{
+        width: 300px;
+        height: 350px;
+    
+    
+    }
+    
+    
+    .adopt-card div a{
+        font-size: 20px;
+    }
+
+    .adopt-card div img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .titulo-galeria{
+        height: 40px;
+        width: 100%
+    
+    }
+
+    .titulo-galeria h1{
+        font-size: 30px;
+    }
+
+.fixed{
+    display: none;
+    }
+
+.footer div{ 
+    width: 80%;
+    height: 100px;
+
+
+    }
+
+.footer img{
+    width: 70px;
+    height: 100px;
+
+
+    }
+
+.footer p{
+    font-size: 10px;
+
+
+    }
+}
+
+@media screen and (max-width:580px){
+
+    .navbar-brand{
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .hero{
+        background-image: url("../img/indexbackground2.png");
+        width: 100%;
+        height: 350px;
+    }
+    
+    
+    
+    .hero h1{
+        font-size: 40px;
+        
+    }
+    
+    .hero h2{
+        font-size: 16px;
+    }
+    
+    .hero p{
+        margin: 10px;
+        font-size: 15px;
+        text-align: center;
+    
+    }
+
+    .slogan{
+        width: 100%;
+        height: 40px;
+    }
+    
+    .slogan h3{
+        font-size: 13px;
+    
+    }
+    
+    .slogan h4{
+        
+        font-size: 13px;
+    
+    }
+        
+    
+    .adopt-card{
+        height: 300px;
+    }
+    
+    .adopt-card div{
+        width: 250px;
+        height: 270px;  
+    
+    
+    }
+    
+    
+    .adopt-card div a{
+        font-size: 15px;
+    }
+
+    .adopt-card div img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .titulo-galeria{
+        height: 30px;
+        width: 100%
+
+    }
+
+    .titulo-galeria h1{
+        font-size: 20px;
+    }
+    .galeria-grid h3{
+        font-size: 15px;
+    }
+    
+    .fixed{
+        display: none;
+    }
+
+    .footer div{
+        margin-left: 20px;
+        width: 80%;
+        height: 100px;
+
+
+    }
+
+    .footer img{
+        width: 60px;
+        height: 90px;
+
+
+    }
+
+    .footer p{
+        font-size: 10px;
+
+
+    } } 

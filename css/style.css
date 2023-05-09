@@ -85,6 +85,7 @@ body{
 
 nav div a{
     margin-left: 30px;
+    background-color: rgb(229, 233, 254);
 }
 
 
@@ -104,7 +105,6 @@ nav div a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
 }
 
@@ -206,7 +206,9 @@ nav div a{
     background-color: rgb(246, 152, 213);
     box-shadow: 0 0 10px rgb(105, 86, 209);
     transition: 1s;
+
 }
+
 .adopt-card div img{
     width: 400px;
     height: 400px;
@@ -279,9 +281,12 @@ nav div a{
     
 }
 
-.item-galeria{
+.container-fluid{
+    background-color: rgb(229, 233, 254)
+}
 
-    background-color: rgb(229, 220, 250);
+.item-galeria{
+    background-color: rgb(229, 233, 254);
     position: relative;
 }
 
@@ -296,10 +301,6 @@ nav div a{
     font-size: 20px;
     font-family: 'Popins', sans-serif;
     font-weight: 600;
-    
-    
-    
-
 }
 
 
@@ -366,8 +367,7 @@ nav div a{
 
     .navbar-brand{
         padding: 0;
-        margin-left: 10px;
-  
+        margin-left: 10px; 
     }        
     
     .hero{

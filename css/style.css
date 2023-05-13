@@ -179,6 +179,7 @@ nav div a{
     width: 500px;
     height: 550px;
     border: 7px rgb(105, 86, 209) solid;
+    border-radius: 10px;
     text-align: center;
     margin: 40px;
 
@@ -248,14 +249,7 @@ nav div a{
     color: rgb(229, 233, 254);
 
 }
-.formulario{
-    text-align: justify;
-    font-family: 'Popins', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    color: rgb(103, 69, 142);
-    
-}
+
 
 .titulo-galeria{
     background-color: rgb(229, 220, 250);
@@ -339,26 +333,126 @@ nav div a{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 800px;
+    padding: 20px;
 
 }
 
-.donate h1{
+.donate-tittle{
+    width: 80%;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.donate-tittle h1{
+    padding: 10px;
+    width: 80%;
+    height: 50px;
     color: rgb(103, 69, 142);
     font-family: 'Popins', sans-serif;
     font-size: 40px;
     font-weight: 600;
+   
 }
 
-.donate p{
+.donate-tittle p{
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
     color: rgb(137, 143, 210);
     font-family: 'Popins', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
+    
 }
+
+.donate-cards {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.donate-cards div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.donate-cards div a{
+    padding: 5px;
+    text-decoration: none;
+    color: rgb(105, 86, 209);
+    font-family:'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: rgb(229, 220, 250);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.donate-cards div a:hover{
+    background-color: rgb(246, 152, 213);
+    box-shadow: 0 0 10px rgb(246, 152, 213);
+    transition: 1s;
+
+}
+.card1{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(115, 123, 186);
+    
+
+}
+
+.card2{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(115, 123, 186);
+    margin-left: 50px;
+}
+
+.card1 h2{
+    color: rgb(229, 220, 250);
+    font-family: 'Popins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card2 h2{
+    color: rgb(229, 220, 250);
+    font-family: 'Popins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
 
 .formulario{
     background-color: rgb(229, 220, 250);
+    text-align: justify;
+    font-family: 'Popins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(103, 69, 142);
+    
 }
 
 .formulario h2{
@@ -371,6 +465,8 @@ nav div a{
 
 
 }
+
+
 
 .form-control{
     width: 350px;

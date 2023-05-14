@@ -217,11 +217,7 @@ nav div a{
 
 }
 
-.fixed{
-    position: fixed;
-    right: 50px ;
-    bottom: 50px;
-}
+
 
 .acercade{
     background-image: url(../img/cat5.jpg);
@@ -232,12 +228,30 @@ nav div a{
     background-size: cover;
     width: 100%;
     height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.acercade h1{
+
+.acercade .mision {
+    width: 40%;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.acercade .vision {
+    width: 40%;
+    margin-left: 20px;
+    align-self: flex-end;
+}
+
+.acercade h2{
     font-family: 'Popins', sans-serif;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 800;
     color: rgb(229, 220, 250);
 
 }
@@ -249,7 +263,6 @@ nav div a{
     color: rgb(229, 233, 254);
 
 }
-
 
 .titulo-galeria{
     background-color: rgb(229, 220, 250);
@@ -359,7 +372,6 @@ nav div a{
     font-family: 'Popins', sans-serif;
     font-size: 40px;
     font-weight: 600;
-   
 }
 
 .donate-tittle p{
@@ -506,6 +518,14 @@ nav div a{
 .mapa{
     background-color: rgb(229, 220, 250);
 }
+
+.fixed{
+    position: fixed;
+    right: 50px ;
+    bottom: 50px;
+}
+
+
 /*-----FOOTER-----*/
 
 .footer{

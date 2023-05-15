@@ -285,7 +285,7 @@ nav div a{
     background-color: rgb(229, 220, 250);
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 300px 400px 300px;
+    grid-template-rows: auto;
     gap: 10px;
 }
 
@@ -458,30 +458,46 @@ nav div a{
 
 
 .formulario{
+    width: 100%;
+    height: 700px;
     background-color: rgb(229, 220, 250);
-    text-align: justify;
     font-family: 'Popins', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: rgb(103, 69, 142);
     
+   
+
+
+    
 }
 
 .formulario h2{
-    padding: 10px;
-    height: 40px;
+    margin-top: 45px;
     font-family: 'Popins', sans-serif;
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 700;
     color: rgb(105, 86, 209);
-
-
 }
 
 
 
+.form-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    
+}
 .form-control{
-    width: 350px;
+    width: 400px;
+}
+
+.mapa{
+    background-color: rgb(229, 220, 250);
+    margin-top: 50px;
+
 }
 
 .btn-primary{
@@ -507,7 +523,7 @@ nav div a{
 }
 
 .mb-3{
-    margin-top: 5px;
+    margin-top: 20px;
     padding: 4px;
 }
 
@@ -515,9 +531,6 @@ nav div a{
     padding: 2px;
 }
 
-.mapa{
-    background-color: rgb(229, 220, 250);
-}
 
 .fixed{
     position: fixed;
@@ -751,6 +764,7 @@ nav div a{
     .galeria-grid h3{
         font-size: 15px;
     }
+
     
     .fixed{
         display: none;

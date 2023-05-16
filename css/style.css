@@ -49,12 +49,13 @@ body{
 .header div a{
     text-decoration: none;
     color: rgb(137, 143, 210);
+    transition: color 1s;
     
 }
 
 .header div a:hover{
     color: rgb(246, 152, 213);
-    transition: 0,5s;
+    
 
 }
 
@@ -94,7 +95,7 @@ nav div a{
 
 
 .hero{
-    background-image: url("../img/indexbackground.jpg");
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.095) 100%), url("../img/indexbackground.jpg");
     background-position: center;
     background-attachment: fixed;
     background-position: center;
@@ -115,6 +116,7 @@ nav div a{
     font-weight: 600;
     font-size: 90px;
     color: rgb(103, 69, 142);
+    text-shadow: 2px 2px 3px rgb(67, 29, 87);
     
 }
 
@@ -124,6 +126,7 @@ nav div a{
     font-weight: 700;
     font-size: 45px;
     color: rgb(229, 220, 250);
+    text-shadow: 2px 2px 3px rgb(213, 152, 246);
 }
 
 .hero p{
@@ -132,13 +135,14 @@ nav div a{
     font-weight: 600;
     font-size: 25px;
     color: rgb(229, 233, 254);
+    text-shadow: 2px 2px 3px rgb(213, 152, 246);
     width: 50%;
     margin-top: 30px;
 
 }
 
 .slogan{
-    background-color:rgb(229, 233, 254);
+    background-image: linear-gradient(90deg, rgba(203,201,235,1) 0%, rgba(187,168,228,1) 100%, rgba(121,113,235,0) 100%);
     width: 100%;
     height: 60px;
     align-items: center;
@@ -149,6 +153,7 @@ nav div a{
     font-weight: 700;
     font-size: 20px;
     color:  rgb(105, 86, 209);
+    text-shadow: 2px 2px 3px rgb(213, 152, 246);
     text-align: center;
     
 
@@ -159,6 +164,7 @@ nav div a{
     font-weight: 700;
     font-size: 20px;
     color:  rgb(105, 86, 209);
+    text-shadow: 2px 2px 3px rgb(213, 152, 246);
     text-align: center;
     
 
@@ -166,7 +172,7 @@ nav div a{
     
 
 .adopt-card{
-    background-color: rgb(103, 69, 142);
+    background-image: linear-gradient(90deg, rgba(103,69,142,1) 0%, rgba(113,79,130,1) 100%, rgba(121,113,235,0) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,16 +182,23 @@ nav div a{
 
 .adopt-card div{
     background-color: rgb(229, 220, 250);
+    box-shadow: 12px 13px 19px 5px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 12px 13px 19px 5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 12px 13px 19px 5px rgba(0,0,0,0.65);
     width: 500px;
     height: 550px;
     border: 7px rgb(105, 86, 209) solid;
     border-radius: 10px;
     text-align: center;
     margin: 40px;
+    transition: 1s;
 
 
 }
 
+.adopt-card div:hover{
+    transform: scale(1.1);
+}
 
 .adopt-card div a{
     text-decoration: none;
@@ -194,10 +207,11 @@ nav div a{
     font-size: 30px;
     letter-spacing: 2px;
     color: rgb(229, 233, 254);
+    text-shadow: 2px 2px 3px rgb(213, 152, 246);
     background-color: rgb(126, 110, 214);
     padding: 5px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 2s;
     
 
     
@@ -205,10 +219,10 @@ nav div a{
 
 .adopt-card div a:hover{
     background-color: rgb(246, 152, 213);
-    box-shadow: 0 0 10px rgb(105, 86, 209);
-    transition: 1s;
-
+    box-shadow: 0 0 10px rgb(246, 152, 213);
+    
 }
+
 
 .adopt-card div img{
     width: 400px;
@@ -220,7 +234,7 @@ nav div a{
 
 
 .acercade{
-    background-image: url(../img/cat5.jpg);
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.2) 100%), linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255, 255, 255, 0.095) 100%), url(../img/cat5.jpg);
     background-position: center;
     background-attachment: fixed;
     background-position: center;
@@ -253,19 +267,21 @@ nav div a{
     font-size: 40px;
     font-weight: 800;
     color: rgb(229, 220, 250);
+    text-shadow: 2px 2px 3px rgb(154, 114, 210);
 
 }
 
 .acercade p{
     font-family: 'Popins', sans-serif;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
     color: rgb(229, 233, 254);
+    text-shadow: 2px 2px 3px rgb(154, 114, 210);
 
 }
 
 .titulo-galeria{
-    background-color: rgb(229, 220, 250);
+    background-image: linear-gradient(90deg, rgba(203,201,235,1) 0%, rgba(187,168,228,1) 100%, rgba(121,113,235,0) 100%);
     height: 60px;
     width: 100%
     
@@ -273,6 +289,7 @@ nav div a{
 
 .titulo-galeria h1{
     color: rgb(103, 69, 142);
+    text-shadow: 1px 1px 2px rgb(117, 85, 163);
     font-size: 40px;
     font-weight: 700;
     font-family: 'Popins' sans-serif;
@@ -282,7 +299,7 @@ nav div a{
 .galeria-grid{
     width: 100%;
     height: auto;
-    background-color: rgb(229, 220, 250);
+    background-image: linear-gradient(90deg, rgba(203,201,235,1) 0%, rgba(187,168,228,1) 100%, rgba(121,113,235,0) 100%);
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
@@ -300,7 +317,9 @@ nav div a{
 }
 
 .container-fluid{
-    background-color: rgb(229, 233, 254)
+    width: 100%;
+    height: auto;
+    background-color: rgb(229, 233, 254);
 }
 
 .item-galeria{
@@ -339,7 +358,7 @@ nav div a{
 }
 
 .donate{
-    background-image: url(../img/cat4.jpg);
+    background-image: linear-gradient(to bottom, rgba(35, 31, 31, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../img/cat4.jpg);
     background-position: center;
     background-attachment: fixed;
     background-position: center;
@@ -369,6 +388,7 @@ nav div a{
     width: 80%;
     height: 50px;
     color: rgb(103, 69, 142);
+    text-shadow: 1px 1px 2px rgb(42, 25, 66);
     font-family: 'Popins', sans-serif;
     font-size: 40px;
     font-weight: 600;
@@ -381,6 +401,7 @@ nav div a{
     height: 50px;
     padding: 10px;
     color: rgb(137, 143, 210);
+    text-shadow: 1px 1px 2px rgb(117, 85, 163);
     font-family: 'Popins', sans-serif;
     font-size: 25px;
     font-weight: 500;
@@ -393,9 +414,12 @@ nav div a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 
 
 }
+
+
 
 .donate-cards div{
     display: flex;
@@ -411,6 +435,7 @@ nav div a{
     padding: 5px;
     text-decoration: none;
     color: rgb(105, 86, 209);
+    text-shadow: 2px 2px 3px rgb(154, 114, 210);
     font-family:'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -418,18 +443,22 @@ nav div a{
     background-color: rgb(229, 220, 250);
     padding: 5px;
     border-radius: 10px;
+    transition: 1s;
 }
 
 .donate-cards div a:hover{
     background-color: rgb(246, 152, 213);
     box-shadow: 0 0 10px rgb(246, 152, 213);
-    transition: 1s;
+    transform: scale(1.2);
 
 }
 .card1{
     width: 300px;
     height: 200px;
     background-color: rgb(115, 123, 186);
+    box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-webkit-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
     
 
 }
@@ -438,11 +467,15 @@ nav div a{
     width: 300px;
     height: 200px;
     background-color: rgb(115, 123, 186);
+    box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-webkit-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
+-moz-box-shadow: 12px 13px 19px 1px rgba(0,0,0,0.65);
     margin-left: 50px;
 }
 
 .card1 h2{
     color: rgb(229, 220, 250);
+    text-shadow: 2px 2px 3px rgb(67, 29, 87);
     font-family: 'Popins', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -450,6 +483,7 @@ nav div a{
 
 .card2 h2{
     color: rgb(229, 220, 250);
+    text-shadow: 2px 2px 3px rgb(67, 29, 87);
     font-family: 'Popins', sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -460,11 +494,12 @@ nav div a{
 .formulario{
     width: 100%;
     height: 700px;
-    background-color: rgb(229, 220, 250);
+    background-image: linear-gradient(90deg, rgba(203,201,235,1) 0%, rgba(187,168,228,1) 100%, rgba(121,113,235,0) 100%);
     font-family: 'Popins', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-size: 20px;
     color: rgb(103, 69, 142);
+    
     
    
 
@@ -478,6 +513,7 @@ nav div a{
     font-size: 40px;
     font-weight: 700;
     color: rgb(105, 86, 209);
+    text-shadow: 1px 1px 2px rgb(117, 85, 163);
 }
 
 
@@ -525,6 +561,7 @@ nav div a{
 .mb-3{
     margin-top: 20px;
     padding: 4px;
+    
 }
 
 .form-label{

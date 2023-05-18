@@ -14,6 +14,14 @@ body{
     font-family: 'Popins' sans-serif !important;
 }
 
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /*-----HEADER-----*/
 
 .header{
@@ -47,7 +55,7 @@ body{
 }
 
 .header div a{
-    text-decoration: none;
+    
     color: rgb(137, 143, 210);
     transition: color 1s;
     
@@ -201,7 +209,7 @@ nav div a{
 }
 
 .adopt-card div a{
-    text-decoration: none;
+    
     font-family:'Poppins', sans-serif;
     font-weight: 600;
     font-size: 30px;
@@ -432,7 +440,6 @@ nav div a{
 
 .donate-cards div a{
     padding: 5px;
-    text-decoration: none;
     color: rgb(105, 86, 209);
     text-shadow: 2px 2px 3px rgb(154, 114, 210);
     font-family:'Poppins', sans-serif;
@@ -1121,4 +1128,5 @@ nav div a{
         font-size: 10px;
 
 
-    } } 
+    }
+} 

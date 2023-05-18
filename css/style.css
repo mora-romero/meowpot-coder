@@ -399,7 +399,6 @@ nav div a{
     margin-top: 20px;
     width: 100%;
     height: 50px;
-    padding: 10px;
     color: rgb(137, 143, 210);
     text-shadow: 1px 1px 2px rgb(117, 85, 163);
     font-family: 'Popins', sans-serif;
@@ -632,17 +631,17 @@ nav div a{
     }
 
     .hero h1{
-        font-size: 50px;
+        font-size: 3em;
         
     }
     
     .hero h2{
-        font-size: 20px;
+        font-size: 2em;
     }
     
     .hero p{
         margin: 10px;
-        font-size: 20px;
+        font-size: 1em;
         text-align: center;
     
     }
@@ -653,13 +652,13 @@ nav div a{
     }
     
     .slogan h3{
-        font-size: 15px;
+        font-size: 1em;
     
     }
     
     .slogan h4{
         
-        font-size: 15px;
+        font-size: 1em;
     
     }
         
@@ -677,13 +676,54 @@ nav div a{
     
     
     .adopt-card div a{
-        font-size: 20px;
+        font-size: 2em;
     }
 
     .adopt-card div img{
         width: 200px;
         height: 200px;
     }
+
+    .acercade{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    
+    .acercade .mision {
+        padding: 5px;
+        width: 100%;
+        align-self: center;
+        margin: 0;
+        
+    }
+    
+    .acercade .vision {
+        padding: 5px;
+        width: 100%;
+        align-self: center;
+        margin: 0;
+    }
+    
+    .acercade h2{
+        font-family: 'Popins', sans-serif;
+        font-size: 2em;
+        font-weight: 800;
+    
+    }
+    
+    .acercade p{
+        font-family: 'Popins', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+    
+    }
+
 
     .titulo-galeria{
         height: 40px;
@@ -692,9 +732,126 @@ nav div a{
     }
 
     .titulo-galeria h1{
-        font-size: 30px;
+        font-size: 2em;
     }
 
+    .donate{
+        background-image: linear-gradient(to bottom, rgba(35, 31, 31, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../img/donatemobile.png);
+        width: 100%;
+        height: 800px;
+    }
+    
+    .donate-tittle{
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .donate-tittle h1{
+        padding: 10px;
+        width: 100%;
+        height: 20px;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+    
+    .donate-tittle p{
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        height: 50px;
+        font-size: 1em;
+        text-align: center;
+        color: rgb(229, 233, 254);
+        font-weight: 600;
+        
+    }
+    
+    .donate-cards {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    
+    }
+    
+    
+    
+    .donate-cards div{
+        width: 50%;
+        height: 800px;
+        
+    
+    }
+        
+    
+    .donate-cards div a{
+        padding: 5px;
+        font-size: 1em;
+
+    }   
+    
+    .card1{
+        width: 300px;
+        height: 300px;
+        
+    
+    }
+    
+    .card2{
+        width: 300px;
+        height: 300px;
+        margin-left: 0;
+    }
+    
+    .card1 h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .card2 h2{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .formulario{
+        width: 100%;
+        height: 900px;
+        font-size: 1em;
+        
+    }
+    
+    .formulario h2{
+        font-size: 2em;
+    } 
+
+    .form-flex{
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .form-control{
+        width: 400px;
+    }
+    .mapa iframe {
+        width: 500px; 
+        height: 300px;
+    }
+    
 .fixed{
     display: none;
     }
@@ -714,7 +871,7 @@ nav div a{
     }
 
 .footer p{
-    font-size: 10px;
+    font-size: 1em;
 
 
     }
@@ -730,40 +887,40 @@ nav div a{
     .hero{
         background-image: url("../img/indexbackground2.png");
         width: 100%;
-        height: 350px;
+        height: 400px;
     }
     
     
     
     .hero h1{
-        font-size: 40px;
+        font-size: 2em;
         
     }
     
     .hero h2{
-        font-size: 16px;
+        font-size: 1em;
     }
     
     .hero p{
-        margin: 10px;
-        font-size: 15px;
+        margin: 5px;
+        font-size: 1em;
         text-align: center;
     
     }
 
     .slogan{
         width: 100%;
-        height: 40px;
+        height: 50px;
     }
     
     .slogan h3{
-        font-size: 13px;
+        font-size: 1em;
     
     }
     
     .slogan h4{
         
-        font-size: 13px;
+        font-size: 1em;
     
     }
         
@@ -789,6 +946,44 @@ nav div a{
         height: 170px;
     }
 
+    .acercade{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    
+    .acercade .mision {
+        width: 100%;
+        align-self: center;
+        margin: 0;
+        
+    }
+    
+    .acercade .vision {
+        width: 100%;
+        align-self: center;
+        margin: 0;
+    }
+    
+    .acercade h2{
+        font-family: 'Popins', sans-serif;
+        font-size: 2em;
+        font-weight: 800;
+    
+    }
+    
+    .acercade p{
+        font-family: 'Popins', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+    
+    }
+
     .titulo-galeria{
         height: 30px;
         width: 100%
@@ -796,13 +991,113 @@ nav div a{
     }
 
     .titulo-galeria h1{
-        font-size: 20px;
+        font-size: 1.5em;
     }
     .galeria-grid h3{
-        font-size: 15px;
+        font-size: 1em;
     }
 
+    .donate{
+        background-image: linear-gradient(to bottom, rgba(35, 31, 31, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../img/donatemobile.png);
+        width: 100%;
+        height: 800px;
+    }
+
+    .donate-tittle{
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
+    
+    
+    .donate-tittle h1{
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        font-size: 2em;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+    
+    .donate-tittle p{
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 0;
+        width: 100%;
+        height: 50px;
+        font-size: 1em;
+        text-align: center;
+        color: rgb(229, 233, 254);
+        font-weight: 600;
+        
+    }
+    
+    .donate-cards {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    
+    }
+    
+    
+    
+    .donate-cards div{
+        width: 50%;
+        height: 800px;
+        
+    
+    }
+        
+    
+    .donate-cards div a{
+        padding: 5px;
+        font-size: 1em;
+
+    }   
+    
+    .card1{
+        width: 300px;
+        height: 200px;
+        
+    
+    }
+    
+    .card2{
+        width: 300px;
+        height: 200px;
+        margin-left: 0;
+    }
+    
+    .card1 h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .card2 h2{
+        font-size: 1em;
+        text-align: center;
+    }
+        
+    
+    .form-control{
+        width: 300px;
+    }
+
+
+    .mapa iframe {
+        width: 250px; 
+        height: 200px;
+    }
+
     .fixed{
         display: none;
     }

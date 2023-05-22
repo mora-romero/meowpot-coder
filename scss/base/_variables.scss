@@ -1,5 +1,34 @@
-/*//Colores*/
-$color-principal :rgb(229, 233, 254);
-$color-secundario:  rgb(103, 69, 142);
-$color-terciario: rgb(229, 220, 250);
+
+$colores: 
+rgb(229, 233, 254),
+rgb(229, 220, 250),
+rgb(115, 123, 186),
+rgb(105, 86, 209),
+rgb(117, 85, 163),
+rgb(103, 69, 142),
+rgb(213, 152, 246),
+rgb(246, 152, 213);
+
+
+$font-size: 
+10px,
+15px,
+18px,
+20px,
+25px,
+30px,
+40px;
+
+
+@mixin flex($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+
+}
 

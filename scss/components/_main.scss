@@ -9,8 +9,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 800px;
+    @include size (100%, 800px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +19,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         font-size: 90px;
-        color: rgb(103, 69, 142);
+        color: nth($colores, 6);
         text-shadow: 2px 2px 3px rgb(67, 29, 87);
     }
 
@@ -29,17 +28,17 @@
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 45px;
-        color: rgb(229, 220, 250);
-        text-shadow: 2px 2px 3px rgb(213, 152, 246);
+        color: nth($colores, 2);
+        text-shadow: 2px 2px 3px nth($colores, 7);
     }
 
     p {
         text-align: center;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-        font-size: 25px;
-        color: $color-principal;
-        text-shadow: 2px 2px 3px rgb(213, 152, 246);
+        font-size: nth($font-size, 5);
+        color: nth($colores, 1);
+        text-shadow: 2px 2px 3px nth($colores, 7);
         width: 50%;
         margin-top: 30px;
     }
@@ -54,38 +53,36 @@
     h3 {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
-        font-size: 20px;
-        color: rgb(105, 86, 209);
-        text-shadow: 2px 2px 3px rgb(213, 152, 246);
+        font-size: nth($font-size, 4);
+        color: nth($colores, 4);
+        text-shadow: 2px 2px 3px nth($colores, 7);
         text-align: center;
     }
 
     h4 {
         font-family: "Poppins", sans-serif;
         font-weight: 700;
-        font-size: 20px;
-        color: rgb(105, 86, 209);
-        text-shadow: 2px 2px 3px rgb(213, 152, 246);
+        font-size: nth($font-size, 4);
+        color: nth($colores, 4);
+        text-shadow: 2px 2px 3px nth($colores, 7);
         text-align: center;
     }
 }
 
 .adopt-card {
+    @include flex (flex, center, center);
+    @include size (100%, 650px);
     background-image: linear-gradient(90deg, rgba(103, 69, 142, 1) 0%, rgba(113, 79, 130, 1) 100%, rgba(121, 113, 235, 0) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 650px;
+
 
     div {
-        background-color: $color-terciario;
+        background-color: nth($colores, 2);
         box-shadow: 12px 13px 19px 5px rgba(0, 0, 0, 0.65);
         -webkit-box-shadow: 12px 13px 19px 5px rgba(0, 0, 0, 0.65);
         -moz-box-shadow: 12px 13px 19px 5px rgba(0, 0, 0, 0.65);
         width: 500px;
         height: 550px;
-        border: 7px rgb(105, 86, 209) solid;
+        border: 7px nth($colores, 4) solid;
         border-radius: 10px;
         text-align: center;
         margin: 40px;
@@ -98,10 +95,10 @@
         a {
             font-family: "Poppins", sans-serif;
             font-weight: 600;
-            font-size: 30px;
+            font-size: nth($font-size, 6);
             letter-spacing: 2px;
-            color: $color-principal;
-            text-shadow: 2px 2px 3px rgb(213, 152, 246);
+            color: nth($colores, 1);
+            text-shadow: 2px 2px 3px nth($colores, 7);
             background-color: rgb(126, 110, 214);
             padding: 5px;
             border-radius: 10px;
@@ -109,19 +106,20 @@
         }
 
         a:hover {
-            background-color: rgb(246, 152, 213);
-            box-shadow: 0 0 10px rgb(246, 152, 213);
+            background-color: nth($colores, 8);
+            box-shadow: 0 0 10px nth($colores, 8);
         }
 
         img {
-            width: 400px;
-            height: 400px;
+            @include size (400px, 400px);
             margin: 25px;
         }
     }
 }
 
 .acercade {
+    @include flex (flex, space-between, flex-start);
+    flex-direction: row;
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.095) 100%), url(../img/cat5.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -130,10 +128,8 @@
     width: 100%;
     height: 700px;
     padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    
+    
 
     .mision {
         width: 40%;
@@ -149,37 +145,31 @@
 
     h2 {
         font-family: 'Popins', sans-serif;
-        font-size: 40px;
+        font-size: nth($font-size, 7);
         font-weight: 800;
-        color: $color-terciario;
+        color: nth($colores, 2);
         text-shadow: 2px 2px 3px rgb(154, 114, 210);
     }
 
     p {
         font-family: 'Popins', sans-serif;
-        font-size: 20px;
+        font-size: nth($font-size, 4);
         font-weight: 600;
-        color: $color-principal;
+        color: nth($colores, 1);
         text-shadow: 2px 2px 3px rgb(154, 114, 210);
     }
 }
 
-.fixed {
-    img {
-        width: 100px;
-        height: 100px;
-    }
-}
 
 .titulo-galeria {
     background-image: linear-gradient(90deg, rgba(203, 201, 235, 1) 0%, rgba(187, 168, 228, 1) 100%, rgba(121, 113, 235, 0) 100%);
     height: 60px;
     width: 100%;
 
-    h1 {
-        color: $color-secundario;
-        text-shadow: 1px 1px 2px rgb(117, 85, 163);
-        font-size: 40px;
+    h2 {
+        color:rgb(103, 69, 142);
+        text-shadow: 1px 1px 2px nth($colores, 5);
+        font-size: nth($font-size, 7);
         font-weight: 700;
         font-family: 'Popins', sans-serif;
         text-align: center;
@@ -209,11 +199,10 @@
             position: absolute;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.24);
-            color: rgb(229, 220, 250);
-            align-items: center;
+            color: nth($colores, 2);
             text-align: center;
             width: 100%;
-            font-size: 20px;
+            font-size: nth($font-size, 4);
             font-family: 'Popins', sans-serif;
             font-weight: 600;
         }
@@ -238,20 +227,14 @@
 .container-fluid {
     width: 100%;
     height: auto;
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
 }
 
 .item-galeria {
-    background-color: $color-principal;
+    background-color: nth($colores, 1);
     position: relative;
 }
 
-.fixed {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 .donate {
     background-image: linear-gradient(to bottom, rgba(35, 31, 31, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../img/cat4.jpg);
@@ -264,23 +247,21 @@
     padding: 20px;
 
     .donate-tittle {
-        width: 80%;
-        height: 100px;
+        @include flex (flex, center, center);
+        @include size (80%, 100px);
         padding: 20px;
         margin: 20px;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
 
-        h1 {
+        h2 {
             padding: 10px;
             width: 80%;
             height: 50px;
-            color: $color-secundario;
+            color: rgb(103, 69, 142);
             text-shadow: 1px 1px 2px rgb(42, 25, 66);
             font-family: 'Popins', sans-serif;
-            font-size: 40px;
+            font-size: nth($font-size, 7);
             font-weight: 600;
         }
 
@@ -290,16 +271,15 @@
             width: 100%;
             height: 50px;
             color: rgb(137, 143, 210);
-            text-shadow: 1px 1px 2px rgb(117, 85, 163);
+            text-shadow: 1px 1px 2px nth($colores, 5);
             font-family: 'Popins', sans-serif;
-            font-size: 25px;
+            font-size: nth($font-size, 5);
             font-weight: 500;
         }
     }
 
     .donate-cards {
-        width: 800px;
-        height: 300px;
+        @include size (800px, 300px);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -314,45 +294,43 @@
 
             a {
                 padding: 5px;
-                color: rgb(105, 86, 209);
+                color: nth($colores, 4);
                 text-shadow: 2px 2px 3px rgb(154, 114, 210);
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
-                font-size: 20px;
+                font-size: nth($font-size, 4);
                 letter-spacing: 2px;
-                background-color: $color-terciario;
+                background-color: nth($colores, 2);
                 padding: 5px;
                 border-radius: 10px;
                 transition: 1s;
 
                 &:hover {
-                    background-color: rgb(246, 152, 213);
-                    box-shadow: 0 0 10px rgb(246, 152, 213);
+                    background-color: nth($colores, 8);
+                    box-shadow: 0 0 10px nth($colores, 8);
                     transform: scale(1.2);
                 }
             }
         }
 
         .card1 {
-            width: 300px;
-            height: 200px;
-            background-color: rgb(115, 123, 186);
+            @include size (300px, 200px);
+            background-color:nth($colores, 3);
             box-shadow: 12px 13px 19px 1px rgba(0, 0, 0, 0.65);
             -webkit-box-shadow: 12px 13px 19px 1px rgba(0, 0, 0, 0.65);
             -moz-box-shadow: 12px 13px 19px 1px rgba(0, 0, 0, 0.65);
 
             h2 {
-                color: rgb(229, 220, 250);
+                color: nth($colores, 2);
                 text-shadow: 2px 2px 3px rgb(67, 29, 87);
                 font-family: 'Popins', sans-serif;
-                font-size: 20px;
+                font-size: nth($font-size, 4);
                 font-weight: 500;
             }
         }
 
         .card2 {
-            width: 300px;
-            height: 200px;
+            @include size (300px, 200px);
             background-color: rgb(115, 123, 186);
             box-shadow: 12px 13px 19px 1px rgba(0, 0, 0, 0.65);
             -webkit-box-shadow: 12px 13px 19px 1px rgba(0, 0, 0, 0.65);
@@ -360,10 +338,10 @@
             margin-left: 50px;
 
             h2 {
-                color: $color-terciario;
+                color: nth($colores, 2);
                 text-shadow: 2px 2px 3px rgb(67, 29, 87);
                 font-family: 'Popins', sans-serif;
-                font-size: 20px;
+                font-size: nth($font-size, 4);
                 font-weight: 500;
             }
         }
@@ -371,29 +349,22 @@
 }
 
 
-.fixed {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
 .formulario {
     width: 100%;
     height: 700px;
     background-image: linear-gradient(90deg, rgba(203, 201, 235, 1) 0%, rgba(187, 168, 228, 1) 100%, rgba(121, 113, 235, 0) 100%);
     font-family: 'Popins', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: nth($font-size, 4);
     color: rgb(103, 69, 142);
 
     h2 {
         margin-top: 45px;
         font-family: 'Popins', sans-serif;
-        font-size: 40px;
+        font-size: nth($font-size, 7);
         font-weight: 700;
-        color: rgb(105, 86, 209);
-        text-shadow: 1px 1px 2px rgb(117, 85, 163);
+        color: nth($colores, 4);
+        text-shadow: 1px 1px 2px nth($colores, 5);
     }
 
     .form-flex {
@@ -409,28 +380,30 @@
     }
 
     .mapa {
-        background-color: $color-terciario;
+        width: auto;
+        height: 400px;
+        background-color: nth($colores, 2);
         margin-top: 50px;
     }
 
     .btn-primary {
-        background-color: rgb(115, 123, 186);
-        color: rgb(229, 220, 250);
+        background-color: nth($colores, 3);
+        color: nth($colores, 2);
         padding: 5px;
         border: 2px;
         border-radius: 10px;
-        border-color: rgb(105, 86, 209);
+        border-color: nth($colores, 4);
         transition: 0.5s;
         font-family: 'Popins', sans-serif;
-        font-size: 20px;
+        font-size: nth($font-size, 4);
         font-weight: 400;
         letter-spacing: 1px;
         margin-left: 20px;
         margin-bottom: 20px;
 
         &:hover {
-            background-color: rgb(246, 152, 213);
-            box-shadow: 0 0 10px rgb(115, 123, 186);
+            background-color: nth($colores, 8);
+            box-shadow: 0 0 10px nth($colores, 3);
             transition: 1s;
         }
     }

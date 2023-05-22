@@ -8,13 +8,10 @@
     z-index: 10;
 
     .redes {
-        width: 100%;
-        height: 65px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        @include flex (flex, flex-end, center);
+        @include size (100%, 65px);
         padding: 3px;
-        background-color: $color-secundario;
+        background-color: nth($colores, 6);
 
         a {
         margin: 10px;
@@ -28,33 +25,31 @@
         transition: color 1s;
 
         &:hover {
-        color: rgb(246, 152, 213);
+        color: nth($colores,8);
         }
     }
 
     nav {
-        background-color: $color-principal;
-        width: 100%;
-        height: 100px;
-        font-family: 'Popins' sans-serif;
-        font-weight: 700;
+        background-color: nth($colores, 1);
+        @include size (100%, 100px);
+
 
         .navbar-nav {
-            background-color: $color-principal;
+            background-color: nth($colores, 1);
             display: flex;
             justify-content: space-around;
             align-items: center;
             font-family: 'Poppins', sans-serif;
-            font-size: 20px;
+            font-size: nth($font-size, 4);
             font-weight: 600;
-            font-size: 18px;
-            color: $color-secundario;
-            width: 100%;
-            height: 100px;
+            font-size: nth($font-size, 3);
+            color: nth($colores, 6);
+            @include size (100%, 100px);
+    
 
         div a {
             margin-left: 30px;
-            background-color: $color-principal;
+            background-color: nth($colores, 1);
             }
         }
     }

@@ -339,16 +339,53 @@
         height: 30px;
         width: 100%;
 
-        h1 {
+        h2 {
             font-size: 1.5em;
         }
     }
 
     .galeria-grid {
-        h3 {
-            font-size: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: auto;
+        gap: 10px;
+            h3 {
+                font-size: 1em;
+                    }
+        .img-1 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-2 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-3 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    
+        .img-4 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-5 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .img-6 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    
+        .img-7 {
+            grid-column: span 1;
+            grid-row: span 1;
         }
     }
+
+
+
 
     .donate {
         background-image: linear-gradient(to bottom, rgba(35, 31, 31, 0) 20%, rgba(0, 0, 0, 0) 100%), url(../img/donatemobile.png);
@@ -365,7 +402,7 @@
             justify-content: center;
             align-items: center;
 
-            h1 {
+            h2 {
                 padding: 10px;
                 width: 100%;
                 height: 50px;
@@ -476,11 +513,6 @@
             }
         }
     }
-
-    .fixed {
-        display: none;
-    }
-
 
 
 
